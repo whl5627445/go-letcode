@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func lengthOfLongestSubstring(s string) int {
 
 	length := len(s)
@@ -20,4 +24,9 @@ func max(a int, b int) int {
 		return a
 	}
 	return b
+}
+
+func main() {
+	ss := "pwwkew"
+	fmt.Println(lengthOfLongestSubstring(ss))
 }
